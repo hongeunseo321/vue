@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderCont/>
+  <router-view/>
+  <FooterCont/>
 </template>
-
+// <router-view/> == <jsp:include page="${main_jsp}"></jsp:include>
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderCont from './components/layout/HeaderCont.vue';
+import FooterCont from './components/layout/FooterCont.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderCont,
+    FooterCont
   }
 }
 </script>
